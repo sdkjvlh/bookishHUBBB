@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p {
+  text-align: center;
+  justify-content: center;
+  margin-top: 0;
+  height: 150px;
+  font-size: 100px;
+  background-color: rgb(28, 28, 98);
+  color: white;
+  padding: 10px;
+}
+@keyframes animated {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 50%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+.box {
+  height: 700px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  width: 400px;
+  min-height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 6px;
+}
+.form-title {
+  font-weight: 500px;
+
+  margin-top: 5px;
+  font-size: 35px;
+  margin-left: 130px;
+  justify-content: space-between;
+}
+.form-group {
+  height: 48px;
+
+  margin-bottom: 20px;
+  margin-top: 10px;
+  position: relative;
+  margin-left: 4px;
+}
+.control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 4px;
+  width: 350px;
+  height: 100%;
+  background: none;
+  outline: none;
+  padding: 16px;
+  border-radius: 4px;
+  z-index: 1;
+}
+.form-label {
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  font-size: 14px;
+  background-color: white;
+  transition: 0.4s;
+}
+.control:focus + .form-label {
+  top: -8px;
+  z-index: 10;
+  color: blue;
+}
+.control:focus {
+  border: 2px solid blue;
+}
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 160px;
+}
+.botton-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.form-button {
+  display: flex;
+  padding: 12px 32px;
+  outline: none;
+  background-color: blue;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form-button:hover {
+  box-shadow: 0 1opx 36px rgb(37, 36, 36);
+}
+.control:not(:focus):valid + label {
+  top: -8px;
+  z-index: 10;
+}
+button {
+  width: 150px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 30px;
+  height: 30px;
+  background-color: rgb(94, 94, 214);
+  margin-left: 30px;
+  color: white;
+  margin-bottom: 30px;
+}
+h1 {
+  color: red;
+  font-size: medium;
+}
+i {
+  color: gray;
+  font-size: medium;
+}
+b {
+  color: blue;
+  font-size: medium;
+}
